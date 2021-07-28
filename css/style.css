@@ -4,9 +4,16 @@ body{
     color: #0A143A;
 }
 .header{
-    max-width: 1146px;
-    margin: auto;
+    padding-bottom: 30px;
     padding-top: 30px;
+    margin-bottom: 12px;
+
+}
+.container{
+    max-width: 1146px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
 }
 .menu{
     display: flex;
@@ -75,4 +82,107 @@ body{
 }
 .search-button-text{
     margin-left: 5px;
+}
+.page-content{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-column-gap: 30px ;
+}
+.card-image{
+    border-radius: 10px;
+    width: 264px;
+    height: 168px;
+    object-fit: cover;
+}
+.cards{
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.card{
+    width: 264px;
+    margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)){
+    margin-right: 20px;
+}
+.card-title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #256EEB;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.like {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.card-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A143A;
+    margin-bottom: 10px;
+    display: block;
+}
+.cart-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.card-link{
+    text-decoration: none;
+}
+.service{
+    margin-bottom: 25px;
+}
+.service-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0A143A;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.service-text{
+    max-width: 217px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.sidebar .page-title{
+    font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+}
+.footer-text{
+    display: inline-block;
+    font-size: 14px;
+line-height: 16px;
+color: #C4C4C4;
+margin-bottom: 5px;
+}
+.footer-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+
+}
+.footer-link{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+color: inherit;
 }
